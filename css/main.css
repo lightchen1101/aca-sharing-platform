@@ -203,7 +203,7 @@ p {
 }
 .news-notice .news-notice-cont .marquee {
   display: inline-block;
-  animation: marquee 18s ease-in infinite;
+  animation: marquee 18s linear infinite;
   animation-delay: 0.8s;
 }
 .news-notice .news-notice-cont .marquee:hover {

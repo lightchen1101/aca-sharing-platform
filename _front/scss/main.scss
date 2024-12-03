@@ -211,7 +211,7 @@ p{
     white-space: nowrap;
     .marquee {
       display: inline-block;
-      animation: marquee 18s ease-in infinite;
+      animation: marquee 18s linear infinite;
       animation-delay: .8s;
       &:hover {
         animation-play-state: paused;
