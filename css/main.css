@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*default-color*/
 /*font*/
 /*width*/
@@ -183,6 +184,43 @@ p {
   font-weight: bold;
   font-size: 24px;
   text-decoration: none;
+}
+
+.news-notice {
+  display: flex;
+  margin-block: 3rem;
+  font-size: 1.2rem;
+}
+.news-notice .news-notice-title {
+  border-right: 1px solid #121212;
+  padding-right: 0.8rem;
+  margin-right: 0.8rem;
+  white-space: nowrap;
+}
+.news-notice .news-notice-cont {
+  overflow: hidden;
+  white-space: nowrap;
+}
+.news-notice .news-notice-cont .marquee {
+  display: inline-block;
+  animation: marquee 18s ease-in infinite;
+  animation-delay: 0.8s;
+}
+.news-notice .news-notice-cont .marquee:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+/* 當動畫暫停時保持在原位 */
+.marquee:hover {
+  animation-play-state: paused;
 }
 
 footer {
