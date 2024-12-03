@@ -123,6 +123,9 @@ main{
   text-align: left;
   position: relative;
   z-index: 1;
+  @include phone {
+    width:$phone-width;
+  }
 }
 .section-title{
   hr{
@@ -241,6 +244,15 @@ footer{
   justify-content: space-around;
   position: relative;
   z-index: 1;
+  gap:18px;
+  @include phone {
+    width:$phone-width;
+  }
+  .footer-copyright{
+    @include phone {
+      text-align: left;
+    }
+  }
 }
 .l-footer_totop{
   width:$gotop-width;

@@ -119,6 +119,11 @@ main {
   position: relative;
   z-index: 1;
 }
+@media screen and (max-width: 767px) {
+  main {
+    width: calc(100vw - 36px);
+  }
+}
 
 .section-title hr {
   outline: none;
@@ -230,6 +235,17 @@ footer {
   justify-content: space-around;
   position: relative;
   z-index: 1;
+  gap: 18px;
+}
+@media screen and (max-width: 767px) {
+  footer {
+    width: calc(100vw - 36px);
+  }
+}
+@media screen and (max-width: 767px) {
+  footer .footer-copyright {
+    text-align: left;
+  }
 }
 
 .l-footer_totop {
@@ -702,4 +718,4 @@ footer {
 .flex-end {
   display: flex;
   justify-content: flex-end;
-}/*# sourceMappingURL=main.css.map */
+}
